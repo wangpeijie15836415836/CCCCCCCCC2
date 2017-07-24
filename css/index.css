@@ -1,0 +1,924 @@
+/*封装几个动画demo*/
+
+/*封装第一个*/
+@-webkit-keyframes demo{
+	0%{
+		-webkit-transform:rotate(0deg);
+			
+	}
+	100%{
+		-webkit-transform:rotate(360deg);
+	}
+}
+@-moz-keyframes demo{
+	0%{
+		-moz-transform:rotate(0deg);
+
+	}
+	100%{
+		-moz-transform:rotate(360deg);
+	}
+}
+
+
+/*封装第二个*/
+@-webkit-keyframes demo1{
+	0%{
+        left: 6.40rem;
+			
+	}
+	100%{
+        left: 0px; 
+	}
+}
+@-moz-keyframes demo1{
+	0%{
+		left: 6.40rem;
+
+	}
+	100%{
+		left: 0px;
+	}
+}
+
+/*封装第三个*/
+
+@-webkit-keyframes s{
+	0%{-webkit-transform:rotate(0deg)}
+	100%{-webkit-transform: rotate(360deg);}
+}
+
+/*封装第四个*/
+@-webkit-keyframes ar{
+	0%{bottom: 0%;opacity: 1;}
+	20%{bottom: 1%;opacity: 0.8;}
+	40%{bottom: 2%;opacity: 0.6;}
+	60%{bottom: 3%;opacity: 0.4;}
+	80%{bottom: 4%;opacity: 0.2;}
+	100%{bottom: 5%;opacity: 0;}
+}
+/*封装第五个*/
+@-webkit-keyframes leftRight{
+	0%{
+       left: 3.82rem;
+       top: 1.65rem;
+	}
+	100%{
+       left: 3.62rem;
+       top: 1.35rem;
+	}
+}
+@-moz-keyframes leftRight{
+	0%{
+		left: 3.82rem;
+		top: 1.65rem;
+	}
+	100%{
+		left: 3.62rem;
+		top: 1.35rem;
+	}
+}
+
+
+/*封装第6个*/
+@-webkit-keyframes leftRight2{
+	0%{
+       bottom: 0.58rem;
+	   left:2.32rem;
+	}
+	100%{
+       bottom: 0.78rem;
+	   left:1.82rem;
+	}
+}
+@-moz-keyframes leftRight2{
+	0%{
+		bottom: 0.58rem;
+		left:2.32rem;
+	}
+	100%{
+		bottom: 0.78rem;
+		left:1.82rem;
+	}
+}
+
+
+/*封装第七个*/
+
+@-webkit-keyframes scale{
+	0%{
+		-webkit-transform: scale(1);
+			
+	}
+	100%{
+		-webkit-transform: scale(1.5);
+	}
+}
+@-moz-keyframes scale {
+	0%{
+		-moz-transform: scale(1);
+
+	}
+	100%{
+		-moz-transform: scale(1.5);
+	}
+}
+
+
+
+/*对音符使用*/
+.music{
+	height: 0.90rem;
+	width: 0.70rem;
+	z-index: 8;
+	position: absolute;
+	right: 0.25rem;
+	bottom: 4.00rem;
+}
+.music>img{
+	display: block;
+	height: 0.90rem;
+	width: 0.70rem;
+}
+.demo{
+    -webkit-animation:2s 0s linear infinite normal;
+	-webkit-animation-name:demo;
+	-webkit-animation-fill-mode:forwards;
+	-moz-animation:2s 0s linear infinite normal;
+	-moz-animation-name:demo;
+	-moz-animation-fill-mode:forwards;
+}
+/*设置内容宽度高度*/
+.swiper-container {
+    width: 6.4rem;
+    height:100%;
+    overflow: hidden;
+}
+.swiper-slide{
+    width: 6.40rem;
+    height:100%;
+    overflow: hidden;
+}
+
+/*设置第一张主页面*/
+.main{
+	width: 6.40rem;
+    height: 100%;
+    background: url(../img/pic4.png) center top no-repeat;
+    overflow: hidden;
+    position: relative;
+    background-size: 100% 100%;
+	
+}
+.sign{
+	margin-left: 25px;
+	margin-top: 22px;
+}
+.sign>img{
+	width: 107px;
+	height: 37px;
+}
+.circle1>img {
+	position: absolute;
+    display: block;
+    height: 6.58rem;
+    width: 6.06rem;
+}
+.circle2>img {
+	position: absolute;
+    display: block;
+    height: 6.58rem;
+    width: 6.06rem;
+    top: 1.70rem;
+
+}
+.rotate {
+    height: 3.6rem;
+    width: 3.6rem;
+    position: absolute;
+    top: 3.16rem;
+    left: 1.12rem;
+    overflow: hidden;
+}
+.rotate>img{
+	display: block;
+    height: 3.6rem;
+    width: 3.6rem;
+}
+.circleL {
+    height: 6.58rem;
+    width: 6.06rem;
+    position: absolute;
+    left: 0.20rem;
+    top: 0.38rem;
+}
+.circleL>img {
+    display: block;
+    height: 6.58rem;
+    width: 6.06rem;
+}
+.circleR {
+    height: 6.58rem;
+    width: 6.06rem;
+    position: absolute;
+    left: 0.20rem;
+    top: 0.38rem;
+}
+.circleR>img {
+    display: block;
+    height: 6.58rem;
+    width: 6.06rem;
+}
+
+.car{
+	position: absolute;
+	top: 359px;
+}
+.car>img {
+    display: block;
+    width: 6.40rem;
+    height: 5.25rem;
+}
+.topdir{
+	height: 0.44rem;
+    width: 0.52rem;
+    position: absolute;
+    bottom: 0.78rem;
+    left: 2.94rem;
+    -webkit-animation: ar 2s linear infinite;
+}
+.topdir>img{
+	display: block;
+    height: 0.44rem;
+    width: 0.52rem;
+}
+
+/*设置第二个页面*/
+
+.slider2{
+    width: 6.40rem;
+    height:100%;
+    background: url(../img/twoback.png) center top no-repeat;
+    position: relative;
+	background-size: 100% 100%;
+}
+.slider2 h2{
+	text-align: center;
+	margin-left: 80px;
+	margin-top: 100px;
+}
+.slider2 h2 img{
+	display: block;
+    height: 1.72rem;
+    width: 3.50rem;
+}
+.slider2 h3{
+	position: absolute;
+	text-align: center;
+	margin-top: 118px;
+	margin-left: 20px;	
+	
+}
+.slider2 h3 img{
+	display: block;
+    height: 3.64rem;
+    width: 6.02rem;
+}
+.slider2 h4{
+	height: 0.44rem;
+    width: 0.52rem;
+    position: absolute;
+    bottom: 0.78rem;
+    left: 2.94rem;
+    -webkit-animation: ar 2s linear infinite;
+}
+.slider2 h4 img{
+	display: block;
+    height: 0.44rem;
+    width: 0.52rem;
+}
+/*设置第三个页面*/
+.slider3{
+	width: 6.40rem;
+    height: 100%;
+    background: url(../img/twopic2.png) center top no-repeat;
+    position: relative;
+    overflow: hidden;
+    background-size: 100% 100%;
+    }
+.slider3 div:nth-child(1){
+	width: 2.33rem;
+    height: 2.33rem;
+    position: absolute;
+    left: 0.35rem;
+    top: 0.57rem;
+}
+.slider3 div:nth-child(1) img{
+	display: block;
+    width: 2.33rem;
+    height: 2.33rem;
+}
+.slider3 div:nth-child(2){
+	    width: 2.13rem;
+	    height: 2.13rem;
+	    position: absolute;
+	    left: 0.48rem;
+	    top: 0.72rem;
+}
+.slider3 div:nth-child(2) img{
+	display: block;
+    width: 2.13rem;
+    height: 2.13rem;
+
+}
+.slider3 div:nth-child(3) {
+	width: 2.16rem;
+    height: 2.16rem;
+    position: absolute;
+    left: 0.45rem;
+    top: 0.69rem;
+}
+.slider3 div:nth-child(3) img{
+	display: block;
+    width: 2.16rem;
+    height: 2.16rem;
+
+}
+
+.slider3 div:nth-child(4) {
+	width: 2.65rem;
+    height: 0.60rem;
+    line-height: 0.60rem;
+    font-size: 0.48rem;
+    font-family: "微软雅黑";
+    border-bottom: 1px solid black;
+    position: absolute;
+    left: 2.82rem;
+    top: 1.20rem;
+    z-index: 2;
+}
+
+.slider3 div:nth-child(5) {
+	width: 2.65rem;
+    height: 0.60rem;
+    line-height: 0.60rem;
+    font-size: 0.48rem;
+    font-family: "微软雅黑";
+    border-bottom: 1px solid black;
+    position: absolute;
+    left: 2.4rem;
+    top: 2.3rem;
+    z-index: 2;
+}
+.slider3 div:nth-child(6) {
+	width: 2.65rem;
+    height: 0.60rem;
+    line-height: 0.60rem;
+    font-size: 0.48rem;
+    font-family: "微软雅黑";
+    border-bottom: 1px solid black;
+    position: absolute;
+    left: 0.91rem;
+    top: 3.1rem;
+    z-index: 2;
+}
+.slider3 div:nth-child(7) {
+	height: 9.53rem;
+    width: 15.76rem;
+    background: url(../img/bigcar.png) no-repeat;
+    position: absolute;
+    left: -2.65rem;
+    top: 3.40rem;
+    background-size: 100% 100%;
+}
+.slider3 div:nth-child(7) div:nth-child(1){
+	width: 3.45rem;
+    height: 4.52rem;
+    background: url(../img/bigcarlight.png) no-repeat;
+    position: absolute;
+    top: 4.00rem;
+    left: 2.60rem;
+    display: none;
+    background-size: 100% 100%
+}
+
+.slider3 div:nth-child(8){
+	position: absolute;
+	left: 3.82rem;
+    top: 1.65rem;
+    /*设置手的运动轨迹*/
+    -webkit-animation: 1s 0s ease-in infinite normal;
+    -webkit-animation-name:leftRight;
+	-webkit-animation-fill-mode:forwards;
+	-moz-animation:1s 0s ease-in infinite normal;
+	-moz-animation-name:leftRight;
+	-moz-animation-fill-mode:forwards;
+}
+
+.slider3 div:nth-child(8) img{
+	display: block;
+    width: 0.78rem;
+    height: 0.80rem;
+}
+.slider3 h4{
+	height: 0.44rem;
+    width: 0.52rem;
+    position: absolute;
+    bottom: 0.78rem;
+    left: 2.94rem;
+    -webkit-animation: ar 2s linear infinite;
+}
+.slider3 h4 img{
+	display: block;
+    height: 0.44rem;
+    width: 0.52rem;
+}
+
+
+/*设置第四个页面*/
+.slider4{
+	background: black;
+	width: 6.40rem;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    background-size: 100% 100%;
+}
+
+.slider4 h4{
+	height: 0.44rem;
+    width: 0.52rem;
+    position: absolute;
+    bottom: 0.78rem;
+    left: 2.94rem;
+    -webkit-animation: ar 2s linear infinite;
+}
+.slider4 h4 img{
+	display: block;
+    height: 0.44rem;
+    width: 0.52rem;
+}
+
+/*#box{
+	width: 6.4rem;
+	height: 4.8rem;
+	position: absolute;
+	left: 0;
+	top: 1rem;
+	
+}
+#box img{
+	width: 6.4rem;
+	height: 4.8rem;
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: none;
+}
+#box img:first-child{
+	display: block;
+	
+}*/
+/*.cartext {
+    width: 6.40rem;
+    height: 0.60rem;
+    color: white;
+    font-family: "微软雅黑";
+    font-size: 0.40rem;
+    text-align: center;
+    line-height: 0.60rem;
+    margin-top: 0.20rem;
+}
+.sll {
+    width: 0.70rem;
+    height: 0.73rem;
+    position: absolute;
+    left: 1rem;
+    top: 5.50rem;
+}
+.jia {
+    width: 0.70rem;
+    height: 0.73rem;
+    position: absolute;
+    left: 2.8rem;
+    top: 5.50rem;
+}
+.jian {
+    width: 0.70rem;
+    height: 0.73rem;
+    position: absolute;
+    left: 4.7rem;
+    top: 5.50rem;
+}*/
+
+/*设置第五个页面*/
+.slider5{
+	width: 6.40rem;
+    height: 100%;
+    background: url(../img/threepic1.png) no-repeat;
+    position: relative;
+    background-size: 100% 100%;
+}
+.slider5 div{
+	position: absolute;
+	left: 3.82rem;
+    top: 1.65rem;
+    /*设置手的运动轨迹*/
+    -webkit-animation: 1s 0s ease-in infinite normal;
+    -webkit-animation-name:leftRight;
+	-webkit-animation-fill-mode:forwards;
+	-moz-animation:1s 0s ease-in infinite normal;
+	-moz-animation-name:leftRight;
+	-moz-animation-fill-mode:forwards;
+	z-index:2;
+}
+.slider5 div img{
+	display: block;
+    width: 0.78rem;
+    height: 0.80rem;
+}
+
+.slider5 h2{
+	position: absolute;
+	left: 1.3rem;
+	top:1rem;
+}
+.slider5 h2 img{
+	display: block;
+    height: 0.56rem;
+    width: 3.65rem;
+}
+.slider5 h3{
+	position: absolute;
+	left: 1rem;
+	top: 2rem;
+}
+.slider5 h3 img{
+	display: block;
+    height: 1.56rem;
+    width: 4.65rem;
+}
+.slider5 h4{
+	height: 0.44rem;
+    width: 0.52rem;
+    position: absolute;
+    bottom: 0.78rem;
+    left: 2.94rem;
+    -webkit-animation: ar 2s linear infinite;
+}
+.slider5 h4 img{
+	display: block;
+    height: 0.44rem;
+    width: 0.52rem;
+}
+
+
+
+
+
+
+
+/*设置第六个页面*/
+.slider6{
+	width: 6.40rem;
+    height: 100%;
+    background: url(../img/threepic1.png);
+    position: relative;
+    background-size: 100% 100%;
+}
+.slider6>div:nth-child(1){
+	position: absolute;
+	top: 5.5rem;
+	
+}
+.slider6>div:nth-child(1)>img{
+	display: block;
+    width: 6.40rem;
+    height: 5.92rem;
+}
+
+.back{
+	width: 6.40rem;
+    height: 100%;
+    background: black;
+    filter: alpha(opacity=80);
+    opacity: 0.8;
+    position: absolute;
+}
+
+.slider6>div:nth-child(3){
+	height: 2.05rem;
+    width: 2.05rem;
+    position: absolute;
+    left: 2.16rem;
+    top: 2.74rem;
+    z-index: 2;
+	
+}
+.slider6>div:nth-child(3)>img{
+	display: block;
+    height: 2.05rem;
+    width: 2.05rem;
+
+}
+.slider6>div:nth-child(4){
+	
+	height: 2.05rem;
+	width: 2.05rem;
+	font-size: 0.38rem;
+	line-height: 2.05rem;
+	text-align: center;
+	font-family: "微软雅黑";
+	position: absolute;
+	left: 2.16rem;
+	top: 2.74rem;
+	z-index: 3; 
+	-webkit-animation:1s 0s ease-in infinite normal;
+	-webkit-animation-name:scale;
+	-webkit-animation-fill-mode:forwards;
+	-moz-animation:1s 0s ease-in infinite normal;
+	-moz-animation-name:scale;
+	-moz-animation-fill-mode:forwards;
+}
+
+.slider6 h4{
+	height: 0.44rem;
+    width: 0.52rem;
+    position: absolute;
+    bottom: 0.78rem;
+    left: 2.94rem;
+    -webkit-animation: ar 2s linear infinite;
+}
+.slider6 h4 img{
+	display: block;
+    height: 0.44rem;
+    width: 0.52rem;
+}
+
+
+
+
+/*设置第七个页面*/
+.slider7{
+	height: 100%;
+    width: 6.40rem;
+    background: black;
+    position: relative;
+}
+.slider7>div:nth-child(1){
+	position: absolute;
+}
+.slider7>div:nth-child(1)>img{
+	display: block;
+    height: 8.54rem;
+    width: 6.40rem;
+}
+.slider7>div:nth-child(2){
+	position: absolute;
+	top: 8.65rem;
+}
+.slider7>div:nth-child(2)>img{
+	display: block;
+    height: 2.10rem;
+    width: 4.47rem;
+}
+.slider7>div:nth-child(3){
+	position: absolute;
+	bottom: 0.58rem;
+	left:2.32rem;
+	-webkit-animation:1s 0s ease-in infinite normal;
+	-webkit-animation-name:leftRight2;
+	-webkit-animation-fill-mode:forwards; 
+}
+.slider7>div:nth-child(3)>img{
+	display: block;
+    width: 0.78rem;
+    height: 0.80rem;
+}
+/*
+ * .position2{
+	position: absolute;
+	bottom: 0.58rem;
+	left:2.32rem;
+	-webkit-animation:1s 0s ease-in infinite normal;
+	-webkit-animation-name:leftRight2;
+	-webkit-animation-fill-mode:forwards; 
+}
+
+.position2>img{
+	display: block;
+    width: 0.78rem;
+    height: 0.80rem;
+}*/
+.slider7 h4{
+	height: 0.44rem;
+    width: 0.52rem;
+    position: absolute;
+    bottom: 0.78rem;
+    left: 2.94rem;
+    -webkit-animation: ar 2s linear infinite;
+}
+.slider7 h4 img{
+	display: block;
+    height: 0.44rem;
+    width: 0.52rem;
+}
+
+
+/*设置第八个页面*/
+.slider8{
+	height: 100%;
+    width: 6.40rem;
+    background: url(../img/sixpic1s.png) no-repeat;
+    position: relative;
+    background-size: 100% 100%;
+}
+.slider8 div:nth-child(1){
+	width: 6.40rem;
+    height: 4.35rem;
+    position: absolute;
+}
+.slider8 div:nth-child(1)>img{
+	display: block;
+    width: 6.40rem;
+    height: 4.35rem;
+}
+.slider8 div:nth-child(2){
+	width: 5.58rem;
+    height: 3.00rem;
+    position: absolute;
+    top: 4.35rem;
+    z-index: 2;
+}
+.slider8 div:nth-child(2)>img{
+	display: block;
+    width: 5.58rem;
+    height: 3.00rem;
+}
+.slider8 div:nth-child(3){
+	width: 6.40rem;
+    height: 3.70rem;
+    position: absolute;
+    top: 6.36rem;
+}
+.slider8 div:nth-child(3)>img{
+	display: block;
+    width: 6.40rem;
+    height: 3.70rem;
+}
+.slider8 div:nth-child(4){
+	width: 6.68rem;
+    height: 7.36rem;
+    position: absolute;
+    z-index: 2;
+}
+.slider8 div:nth-child(4)>img{
+	display: block;
+    width: 6.68rem;
+    height: 7.36rem;
+}
+.slider8 h4{
+	height: 0.44rem;
+    width: 0.52rem;
+    position: absolute;
+    bottom: 0.78rem;
+    left: 2.94rem;
+    -webkit-animation: ar 2s linear infinite;
+}
+.slider8 h4 img{
+	display: block;
+    height: 0.44rem;
+    width: 0.52rem;
+}
+
+
+
+
+/*设置第九个页面*/
+.slider9{
+	height: 100%;
+    width: 6.40rem;
+    background: black;
+}
+
+.slider9 h4{
+	height: 0.44rem;
+    width: 0.52rem;
+    position: absolute;
+    bottom: 0.78rem;
+    left: 2.94rem;
+    -webkit-animation: ar 2s linear infinite;
+}
+.slider9 h4 img{
+	display: block;
+    height: 0.44rem;
+    width: 0.52rem;
+}
+
+.slider9 div:nth-child(1){
+	    width: 6.40rem;
+    	height: 3.78rem;
+}
+.slider9 div:nth-child(1)>img{
+	display: block;
+    width: 6.40rem;
+    height: 3.78rem;
+}
+.slider9 div:nth-child(2){
+	width: 6.40rem;
+    height: 3.68rem;
+    margin-top: -1px;
+}
+.slider9 div:nth-child(2)>img{
+	display: block;
+    width: 6.40rem;
+    height: 3.68rem;
+}
+.slider9 div:nth-child(3){
+	width: 6.40rem;
+    height: 3.98rem;
+}
+.slider8 div:nth-child(3)>img{
+	display: block;
+    width: 6.40rem;
+    height: 3.98rem;
+}
+
+
+
+/*设置第10个页面*/
+.slider10{
+	width: 6.40rem;
+    height: 100%;
+    background: url(../img/eightbc.png) no-repeat;
+    position: relative;
+    background-size: 100% 100%;
+    font-size: 15px;
+ 
+}
+.slider10>div:nth-child(1){
+	width: 6.40rem;
+    height: 0.48rem;
+    font-size: 0.48rem;
+    line-height: 0.48rem;
+    text-align: center;
+    font-family: "微软雅黑";
+    position: absolute;
+    top: 1.96rem;
+}
+.slider10 h4{
+	height: 0.44rem;
+    width: 0.52rem;
+    position: absolute;
+    bottom: 0.78rem;
+    left: 2.94rem;
+    -webkit-animation: ar 2s linear infinite;
+}
+.slider10 h4 img{
+	display: block;
+    height: 0.44rem;
+    width: 0.52rem;
+}
+.input input{
+	height: 0.46rem;
+    width: 3.44rem;
+    border: 1px solid #a5aeb7;
+    outline: none;
+    background-color: #c7ddef;
+    margin-left: 0.15rem;
+    font-size: 0.24rem;
+    margin-top: 0.4rem;
+}
+.input label {
+    font-size: 0.24rem;
+    font-family: "微软雅黑";
+    margin-top: 0.11rem;
+    padding: 0px 1px;
+    padding-left: 1.2rem;
+}
+form {
+    width: 6.40rem;
+    position: absolute;
+    top: 2.82rem;
+}
+
+.sends {
+    display: block;
+    height: 0.56rem;
+    width: 3.44rem;
+    background-color: #ff6600;
+    color: white;
+    font-family: "微软雅黑";
+    font-size: 0.36rem;
+    border: none;
+    outline: none;
+    border-radius: 0.10rem;
+    margin-left: 1.88rem;
+    margin-top: 0.38rem;
+}
+
+
+
+
+
+
